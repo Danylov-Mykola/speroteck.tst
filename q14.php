@@ -8,7 +8,7 @@
 
 /** @var array $rawArr. Do not use empty array. Do not use array with repeated values. */
 $rawArr = ["a", "b", "foo" => "c"];
-$rawArr = ["0", "1"];
+//$rawArr = [0, 1];
 // Check is the array acceptable
 if($rawArr === [] || array_unique($rawArr) !== $rawArr){
     throw new Exception('Improper input array detected.');
