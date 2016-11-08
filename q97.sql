@@ -5,4 +5,4 @@ FROM `products`
   LEFT JOIN `category`
     ON `junction`.`cid` = `category`.`cid`
 GROUP BY `products`.`pid`
-HAVING SUM(`enabled` OR `enabled` IS NULL) = COUNT(`products`.`pid`);0.
+HAVING SUM(`enabled` OR `enabled` IS NULL) = COUNT(`products`.`pid`);
